@@ -37,6 +37,7 @@ type MavenProject struct {
 	//todo something like: Properties           map[string]string    `xml:"properties"`
 	DependencyManagement DependencyManagement `xml:"dependencyManagement"`
 	Dependencies         []Dependency         `xml:"dependencies>dependency"`
+	Modules              []string             `xml:"modules>module"`
 	Profiles             []Profile            `xml:"profiles"`
 	Build                Build                `xml:"build"`
 }
